@@ -1,13 +1,9 @@
-h1 {
+.header {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
 }
 
-img {
-    display: flex;
-    justify-content: center;
-}
 
 button {
     border-radius: 5px;
