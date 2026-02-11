@@ -4,6 +4,11 @@ h1 {
     margin-bottom: 50px;
 }
 
+img {
+    display: flex;
+    justify-content: center;
+}
+
 button {
     border-radius: 5px;
     border-color: brown;
