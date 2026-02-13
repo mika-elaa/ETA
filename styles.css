@@ -12,7 +12,8 @@
 }
 
 .action,
-.extras {
+.extras,
+.text {
     display: flex;
     align-items: center;
     justify-content: center;
