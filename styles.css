@@ -38,3 +38,8 @@ button {
     align-items: center;
     justify-content: center;
 }
+
+#Enter {
+    width: 70px;
+    height: 8px;
+}
