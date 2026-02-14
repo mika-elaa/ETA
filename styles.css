@@ -39,7 +39,21 @@ button {
     justify-content: center;
 }
 
-#Enter {
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Enter,
+#Phone-number {
     width: 70px;
-    height: 8px;
+    height: 20px;
+    margin: 20px;
+    font-size: 15px;
+}
+
+#Phone-number {
+    width: 150px;
+    height: 30px;
 }
