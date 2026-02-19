@@ -11,6 +11,10 @@
     font-size: x-large;
 }
 
+#iconPageHeader {
+    margin-bottom: 10px;
+}
+
 .action,
 .extras,
 .text {
