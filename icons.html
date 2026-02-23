@@ -17,25 +17,19 @@
     Your queue number is: 23
     </div>
 
-<div class="text dropdown">
-    <label for="icons">Select your icon: </label>
-    <select id="icons">
-     <option value="">--Make a choice--</option>
-     <option value="banana">Banana</option>
-     <option value="apple">Apple</option>
-     <option value="strawberry">Strawberry</option>
-    </select>
-</div>
-
 <div class="text">
-    <p></p>
+    <p id="selection-msg">Please click on a fruit to choose your icon!</p>
 </div>
 
-    <div class="icons-selection">
-        <img src="./images/apple.png" alt="Image of a cartoon apple" height="150px" width="150px" class="icon">
-        <img src="./images/banana.png" alt="Image of a cartoon banana" height="150px" width="150px" class="icon">
-        <img src="./images/strawberry.png" alt="Image of a cartoon strawberry" height="150px" width="150px" class="icon"> 
-    </div>
+<div class="icons-selection">
+    <img src="./images/apple.png" id="apple-img" alt="Apple" height="150px" width="150px" class="icon">
+    <img src="./images/banana.png" id="banana-img" alt="Banana" height="150px" width="150px" class="icon">
+    <img src="./images/strawberry.png" id="strawberry-img" alt="Strawberry" height="150px" width="150px" class="icon"> 
+</div>
+
+<div class="button1">
+    <button id="finishBtn" style="display: none;" onclick="alert('You are now in the queue! We will text you shortly.')">Finish</button>
+</div>
     
 </body>
 </html>

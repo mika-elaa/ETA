@@ -1,18 +1,14 @@
-//function validateForm() {
-//    let x = document.forms["getNumber"]["Phone-number"].value;
-//    if (x == "") {
-  //      alert("Number must be filled out");
-   //     return false;
-    //}
+const form = document.querySelector("#phoneForm");
+const phoneInput = document.querySelector("#Phone-number");
 
-//document.getElementById("nextBtn").addEventListener("click",
-//   function(event){
-//    event.stopImmediatePropagation()
-//});
+form.addEventListener('submit', function(event) {
+    // Prevent the default form submission (which refreshes the page)
+    event.preventDefault();
 
-
-let btn = document.querySelector("#nextBtn");
-
-btn.addEventListener('click', function(event) {
-   alert("If the number is invalid/input is empty, you will not receive any queue updates.");
+    // Check if the input matches our [0-9]{8} pattern
+    if (phoneInput.checkValidity()) {
+        window.location.href = 'icons.html';
+    } else {
+        alert("Please enter a valid 8-digit phone number.");
+    }
 });

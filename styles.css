@@ -79,6 +79,22 @@ form {
 
 .icon {
     margin: 50px;
+    cursor: pointer; /* Changes the mouse to a hand when hovering */
+    transition: transform 0.2s; /* Smooth pop effect */
+}
+
+.icon:hover {
+    transform: scale(1.4); /* Makes the fruit slightly bigger when hovered */
+}
+
+.icon:active {
+    border: 2px solid brown; /* Brief border when clicked */
+    border-radius: 10px;
+}
+#finishBtn {
+    background-color: brown;
+    color: white;
+    margin-top: 30px;
 }
 
 #phone-instructions {

@@ -22,19 +22,18 @@
           <p><em>*Format:12345678*</em></p>
    </div>
 
-    <form name="getNumber">
-        <input 
+  <form name="getNumber" id="phoneForm">
+    <input 
         type="tel" 
         name="Phone-number" 
         id="Phone-number"
         pattern="[0-9]{8}"
+        placeholder="12345678"
         required>
-        <button id="Enter">Enter</button>
-    </form>
+    <button type="submit" id="nextBtn">Next</button>
+</form>
 
-    <div class="button1">
-        <button onclick="location.href='icons.html'" type="button" id="nextBtn">Next</button>
-    </div>
+   
 
     <div class="text" id="reason">
         <p>We will update you about your queue status via SMS.</p>

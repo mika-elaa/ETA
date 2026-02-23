@@ -1,25 +1,22 @@
-const select = document.querySelector("select");
-const para = document.querySelector("p");
+const para = document.querySelector("#selection-msg");
+const icons = document.querySelectorAll(".icon");
+const finishBtn = document.querySelector("#finishBtn");
 
-select.addEventListener("change", setIcon);
+icons.forEach(icon => {
+    icon.addEventListener("click", function() {
+        // 1. Remove highlight from all fruits
+        icons.forEach(i => i.style.border = "none");
 
-function setIcon() {
-    const choice = select.value;
+        // 2. Add highlight to the clicked fruit
+        this.style.border = "5px solid brown";
+        this.style.borderRadius = "15px";
 
-    switch (choice) {
-        case "banana":
-            para.textContent =
-            "You have chosen the banana icon!";
-            break;
-        case "apple":
-            para.textContent =
-            "You have chosen the apple icon!";
-            break;
-        case "strawberry":
-            para.textContent =
-            "You have chosen the strawberry icon!";
-            break;
-        default:
-            para.textContent = "";
-    }
-}
+        // 3. Get the name and update the text
+        const choice = this.id.replace("-img", "");
+        para.textContent = "You have chosen the $;{choice} icon!";
+        para.style.fontWeight = "bold";
+
+        // 4. Show the Finish button
+        finishBtn.style.display = "flex";
+    });
+});
